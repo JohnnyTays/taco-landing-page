@@ -5,8 +5,4 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/taco-landing-page/',
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-  }
 })
