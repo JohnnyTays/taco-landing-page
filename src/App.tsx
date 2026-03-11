@@ -1,62 +1,30 @@
-import React from 'react';
-
-export default function App() {
+function App() {
   return (
-    <div style={{
-      backgroundColor: 'black',
-      color: 'white',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontFamily: 'sans-serif',
-      padding: '20px',
-      textAlign: 'center'
-    }}>
-      <div style={{
-        border: '1px solid #eab308',
-        padding: '40px',
-        borderRadius: '20px',
-        backgroundColor: '#18181b',
-        maxWidth: '400px'
-      }}>
-        <h1 style={{
-          fontSize: '3rem',
-          fontWeight: '900',
-          margin: '0',
-          color: '#eab308',
-          fontStyle: 'italic'
-        }}>TACO NEXUS</h1>
-        <p style={{
-          color: '#71717a',
-          letterSpacing: '0.2em',
-          fontSize: '0.8rem',
-          marginBottom: '30px'
-        }}>ELITE STREET FLAVORS</p>
+    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4 font-sans">
+      <div className="max-w-md w-full border border-yellow-500/30 p-8 rounded-2xl bg-zinc-900/50 backdrop-blur-xl shadow-2xl">
+        <h1 className="text-5xl font-black tracking-tighter mb-2 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent italic">
+          TACO NEXUS
+        </h1>
+        <p className="text-zinc-400 text-sm uppercase tracking-[0.3em] mb-8">Elite Street Flavors</p>
         
-        <div style={{
-          textAlign: 'left',
-          borderLeft: '2px solid #eab308',
-          paddingLeft: '15px',
-          marginBottom: '30px'
-        }}>
-          <h2 style={{ fontSize: '1.2rem', margin: '0' }}>THE SIGNATURE</h2>
-          <p style={{ color: '#52525b', fontSize: '0.9rem' }}>Wagyu Carne Asada • Truffle Crema</p>
+        <div className="space-y-6">
+          <div className="border-l-2 border-yellow-500 pl-4">
+            <h2 className="text-xl font-bold text-white">THE SIGNATURE</h2>
+            <p className="text-zinc-500 text-sm">Wagyu Carne Asada • Truffle Crema • Micro-Cilantro</p>
+          </div>
+          
+          <button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-black py-4 rounded-lg transition-all transform hover:scale-[1.02] active:scale-95 uppercase tracking-widest">
+            Order Delivery
+          </button>
+          
+          <div className="flex justify-between text-[10px] text-zinc-600 uppercase tracking-widest pt-4 border-t border-zinc-800">
+            <span>Open 24/7</span>
+            <span>Austin, TX</span>
+          </div>
         </div>
-        
-        <button style={{
-          width: '100%',
-          backgroundColor: '#eab308',
-          color: 'black',
-          border: 'none',
-          padding: '15px',
-          borderRadius: '8px',
-          fontWeight: '900',
-          fontSize: '1rem',
-          cursor: 'pointer'
-        }}>ORDER NOW</button>
       </div>
     </div>
   );
 }
+
+export default App;
