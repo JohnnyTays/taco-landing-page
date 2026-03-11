@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taco Nexus | Elite Street Flavors</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACO NEXUS | Elite Street Flavors</title>
+    <style>
+        body { margin: 0; background: #000; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .nexus-card { border: 2px solid #eab308; padding: 3rem; border-radius: 2rem; background: #0a0a0a; text-align: center; max-width: 90%; box-shadow: 0 0 50px rgba(234, 179, 8, 0.1); }
+        h1 { font-size: 3.5rem; margin: 0; color: #eab308; font-style: italic; font-weight: 900; letter-spacing: -2px; }
+        .subtitle { letter-spacing: 0.5em; font-size: 0.7rem; color: #666; margin-bottom: 2rem; text-transform: uppercase; }
+        .signature { border-left: 3px solid #eab308; padding-left: 1.5rem; text-align: left; margin-bottom: 2rem; }
+        .signature h2 { font-size: 1.2rem; margin: 0; text-transform: uppercase; }
+        .signature p { color: #888; margin: 0.5rem 0 0 0; font-size: 0.9rem; }
+        .btn { width: 100%; background: #eab308; color: #000; border: none; padding: 1.2rem; border-radius: 0.75rem; font-weight: 900; font-size: 1rem; cursor: pointer; text-transform: uppercase; transition: transform 0.2s; }
+        .btn:active { transform: scale(0.98); }
+    </style>
+</head>
+<body>
+    <div class="nexus-card">
+        <h1>TACO NEXUS</h1>
+        <div class="subtitle">Future Flavor Systems</div>
+        <div class="signature">
+            <h2>The Signature</h2>
+            <p>Wagyu Carne Asada • Black Truffle Crema</p>
+        </div>
+        <button class="btn">Access Menu</button>
+    </div>
+</body>
 </html>
