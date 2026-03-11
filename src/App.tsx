@@ -1,22 +1,17 @@
-import { motion } from "framer-motion";
+import React from 'react';
 
-const App = () => {
+export default function App() {
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        className="text-center p-8 border border-white/20 rounded-2xl bg-white/5 backdrop-blur-xl"
-      >
-        <h1 className="text-6xl font-black mb-4 tracking-tighter">TACO NEXUS</h1>
-        <p className="text-xl text-white/60 mb-8 uppercase tracking-widest">Elite. Street. Cyber.</p>
-        <button className="px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-white/90 transition-all">
-          ORDER NOW
-        </button>
-      </motion.div>
+    <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: 'sans-serif', textAlign: 'center', padding: '20px' }}>
+      <div style={{ border: '1px solid #eab308', padding: '40px', borderRadius: '20px', backgroundColor: '#111' }}>
+        <h1 style={{ fontSize: '3rem', margin: '0', color: '#eab308', fontStyle: 'italic', fontWeight: '900' }}>TACO NEXUS</h1>
+        <p style={{ letterSpacing: '0.3em', fontSize: '0.8rem', color: '#666', marginBottom: '30px' }}>ELITE STREET FLAVORS</p>
+        <div style={{ borderLeft: '3px solid #eab308', paddingLeft: '20px', textAlign: 'left', marginBottom: '30px' }}>
+          <h2 style={{ fontSize: '1.2rem', margin: '0' }}>THE SIGNATURE</h2>
+          <p style={{ color: '#888', fontSize: '0.9rem' }}>Wagyu Carne Asada • Truffle Crema</p>
+        </div>
+        <button style={{ width: '100%', backgroundColor: '#eab308', border: 'none', padding: '15px', borderRadius: '8px', fontWeight: '900', cursor: 'pointer', textTransform: 'uppercase' }}>Order Now</button>
+      </div>
     </div>
   );
-};
-
-export default App;
+}
