@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 export const Navbar = () => (
   <nav className="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center bg-black/50 backdrop-blur-2xl border-b border-white/5">
     <div className="text-2xl font-black italic tracking-tighter text-[#FF5F1F]">TACO.NEXUS</div>
